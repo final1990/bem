@@ -1,0 +1,120 @@
+.leftmenu-nav-child
+  min-width 100%
+  display none
+
+  dd
+    position relative
+
+.bem-leftmenu
+  z-index 1001
+  width w = 220px
+  box-shadow 1px 0 2px 0 rgba(0, 0, 0, 0.05)
+  transition all 0.3s
+  position fixed
+  left 0
+  top 0
+  bottom 0
+  color #ffffff
+  background #20222A
+  box-sizing border-box
+
+  .leftmenu-scroll
+    height 100%
+    width w
+    overflow-x hidden
+
+  .leftmenu-nav
+    width w
+    margin-top 50px
+    background 0 0
+    position relative
+    box-sizing border-box
+
+  .leftmenu-nav-child
+    position relative
+    z-index 0
+    top 0
+    border none
+    box-shadow none
+
+.leftmenu-nav .leftmenu-item
+  display block
+  width 100%
+  line-height 45px
+  position relative
+  vertical-align middle
+
+  a
+    height 40px
+    line-height 40px
+    padding-left 45px
+    padding-right 30px
+    position relative
+    text-overflow ellipsis
+    overflow hidden
+    white-space nowrap
+    display block
+    color rgba(255, 255, 255, 0.7)
+
+    .fa
+      position absolute
+      top 50%
+      left 20px
+      margin-top -7px
+
+  .leftmenu-item-more
+    content ''
+    width 0
+    height 0
+    border-style solid dashed dashed
+    border-color #fff transparent transparent
+    overflow hidden
+    cursor pointer
+    transition all 0.2s
+    -webkit-transition all 0.2s
+    position absolute
+    top 50%
+    right 15px
+    margin-top -3px
+    border-width 6px
+    border-top-color rgba(255, 255, 255, 0.7)
+
+  .leftmenu-nav-child
+    padding 5px 0
+
+    dd
+      position relative
+
+.leftmenu-item.leftmenu-itemed
+  >.leftmenu-nav-child
+    background-color rgba(0, 0, 0, 0.3) !important
+
+.leftmenu-nav .leftmenu-itemed
+  >a
+    color #ffffff
+    font-weight 600
+    display block
+
+    .leftmenu-item-more
+      margin-top -9px
+      border-style dashed dashed solid
+      border-color transparent transparent #fff
+
+.leftmenu-itemed .leftmenu-nav-child
+  display block
+  padding 0
+
+  .leftmenu-nav-child a
+    padding-left 60px
+
+.leftmenu-nav .leftmenu-itemed dd.leftmenu-selected
+  background-color #009688 !important
+
+  a
+    color #fff
+
+.leftmenu-nav .leftmenu-selected
+  background-color #009688 !important
+
+.leftmenu-nav a
+  cursor pointer

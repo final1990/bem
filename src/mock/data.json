@@ -1,0 +1,37 @@
+{
+  "menu": [{
+      "id" : "page-home",
+      "name": "首页",
+      "type": "folder",
+      "level": 1,
+      "children": []
+    },
+    {
+      "id" : "page-task",
+      "name": "任务",
+      "type": "folder",
+      "level": 1,
+      "children": [{
+          "id" : "page-task-1",
+          "name": "Menu1",
+          "type": "page",
+          "level": 2,
+          "url": ""
+        },
+        {
+          "id" : "page-task-2",
+          "name": "Menu2",
+          "type": "folder",
+          "level": 2,
+          "children": [{
+            "id" : "page-task-2-1",
+            "name": "HelloWrold",
+            "type": "page",
+            "level": 3,
+            "url": "helloworld"
+          }]
+        }
+      ]
+    }
+  ]
+}
